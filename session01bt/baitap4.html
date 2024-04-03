@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+     let id = +prompt();
+     let bookList = [
+        {id:1,name:"sói và cừu"},
+        {id:2,name:"chung và những người bạn"},
+        {id:3,name:"ông lão đánh cá và con cá"},
+        {id:4,name:"chú bé chăn dê"},
+     ]
+     let result = bookList.findIndex((item,index,arr)=>{
+        if (item.id == id) {
+            console.log(item.name);
+        }else{return}
+     })
+     if (result = -1) {
+        console.log("khong có quyển bannj tim");
+     }
+
+    </script>
+</body>
+</html>

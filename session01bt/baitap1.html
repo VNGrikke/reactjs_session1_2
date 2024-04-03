@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="students">
+
+    </ul>
+
+    <script>
+        let student = [
+            {id:1,name:"hung"},
+            {id:2,name:"vu"},
+            {id:3,name:"ha"},
+            {id:4,name:"nam"},
+        ]
+        let x = '';
+        student.forEach((item,index,arr) =>{
+            x += `<li> ${item.name} </li>`
+        })
+        document.getElementById("students").innerHTML = x;
+        
+    </script>
+</body>
+    
+</html>

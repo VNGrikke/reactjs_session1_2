@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let check = true
+        let arr = [
+            {name:"vũ", password:"123 bfyu7"},
+            {name:"mai", password:"12bfyu7"},
+            {name:"linh", password:"13bfyu7"},
+            {name:"nma", password:"123c fyu7"},
+        ]
+        let x = arr.map((item,index,arr) =>{
+                if (item.password.includes(" ")) {
+                    check = false;
+                    return index
+                }
+            })
+        if (!check) {
+            for (let i = 0; i < arr.length; i++) {
+            if (typeof(x[i])=='number') {
+                console.log(x[i]);
+            }
+        }
+           
+        }else{ console.log("moi tai khoan hop le");}
+    </script>
+</body>
+</html>

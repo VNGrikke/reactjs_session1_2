@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let numbers = [3,6,2,8,9,11,56,32]
+        let randomNumber = Math.floor(Math.random()*100);
+        let x = numbers.filter((item)=>{
+            if (item <= randomNumber) {
+                return item
+            }
+        })
+        let result = x.sort((a,b)=>{
+            return a - b;
+        })
+        console.log(randomNumber);
+        console.log(x);
+        console.log("so lon nhat: ", x[x.length - 1]);
+    </script>
+</body>
+</html>
